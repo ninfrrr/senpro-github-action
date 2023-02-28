@@ -36,7 +36,8 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          port: ${{ secets.PASSWORD }}
+          password: ${{ secets.PASSWORD }}
+          port: ${{ secets.PORT }}
           script:
             eval "${ssh-agent -s}"
             ssh-add ~/.ssh/senpro-ssh
